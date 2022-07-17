@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { forwardRef } from "react";
 
+// eslint-disable-next-line react/display-name
 const Thumbnail = forwardRef(({ movie }, ref) => {
   const BASE_URL = "https://image.tmdb.org/t/p/original/";
   return (
@@ -12,6 +13,7 @@ const Thumbnail = forwardRef(({ movie }, ref) => {
     >
       <Image
         layout="responsive"
+        alt="movie_information"
         src={
           `${BASE_URL}${movie.backdrop_path || movie.poster_path}` ||
           `${BASE_URL}${movie.poster_path}`
