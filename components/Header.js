@@ -10,12 +10,13 @@ import HeaderItem from "./HeaderItem";
 function Header() {
   return (
     <header className='flex flex-col sm:flex-row m-5 justify-between items-center'>
-      <Image 
+      {/* <Image 
             className="object-contain"
-            src="https://links.papareact.com/ua6"
+            src="https://imgur.com/a/UoTyxLN"
             width={200}
             height={100} 
-        />
+        /> */}
+        <h2 className='pl-5 font-sans text-5xl tracking-widest'>FULU</h2>
         <div className="flex flex-grow justify-evenly max-w-2xl pt-8">
             <HeaderItem title='Home' Icon={HomeIcon}/>
             <HeaderItem title='Trending' Icon={LightningBoltIcon}/>
