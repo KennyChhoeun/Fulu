@@ -1,5 +1,7 @@
 import Head from 'next/head'
+import Categories from '../components/Categories'
 import Header from '../components/Header'
+import Results from '../components/Results'
 
 export default function Home() {
   return (
@@ -11,8 +13,9 @@ export default function Home() {
       {/*Header*/}
       <Header />
       {/*Categories*/}
-      
+      <Categories />
       {/*Results*/}
+      <Results />
     </div>
   )
 }
